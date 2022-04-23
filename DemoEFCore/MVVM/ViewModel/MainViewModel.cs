@@ -4,7 +4,7 @@ namespace DemoEFCore.MVVM.ViewModel
 {
     public class MainViewModel : ObservableObject
     {
-        private string _title;
+        private string _title = "Главное окно";
 
         public string Title
         {
