@@ -1,9 +1,11 @@
 ﻿<Application x:Class="DemoEFCore.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DemoEFCore"
+             xmlns:local="clr-namespace:DemoEFCore" xmlns:viewmodel="clr-namespace:DemoEFCore.MVVM.ViewModel"
              StartupUri=".\MVVM\View\MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <viewmodel:LocatorViewModel x:Key="Locator"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
