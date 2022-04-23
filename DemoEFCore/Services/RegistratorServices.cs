@@ -5,7 +5,6 @@ namespace DemoEFCore.Services
 {
     public static class RegistratorServices
     {
-        public static IServiceCollection AddSevices(this IServiceCollection services) => services
-            .AddSingleton<MainViewModel>();
+        public static IServiceCollection AddServices(this IServiceCollection services) => services;
     }
 }

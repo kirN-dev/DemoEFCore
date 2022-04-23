@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DemoEFCore.MVVM.ViewModel;
+using DemoEFCore.Services;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Windows;
@@ -14,7 +16,7 @@ namespace DemoEFCore
 
         internal static void ConfigureServices(HostBuilderContext host, IServiceCollection services)
         {
-            throw new NotImplementedException();
+            services.AddServices().AddViewModels();
         }
 
         protected override async void OnStartup(StartupEventArgs e)
