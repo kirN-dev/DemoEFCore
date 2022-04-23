@@ -9,6 +9,7 @@ namespace DemoEFCore.MVVM.ViewModel
 {
     public static class RegistratorViewModel
     {
-        public static IServiceCollection AddViewModels(this IServiceCollection services) => services;
+        public static IServiceCollection AddViewModels(this IServiceCollection services) => services
+            .AddSingleton<MainViewModel>();
     }
 }
